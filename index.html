@@ -69,6 +69,141 @@
       </div>
     </div>
   </section>
+ <!-- Модальное окно для записи -->
+  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form id="appointmentForm" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="appointmentModalLabel">Запись на сервис</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Имя</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Телефон</label>
+            <input type="tel" id="phone" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Дата визита</label>
+            <input type="date" id="date" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Комментарий</label>
+            <textarea id="comment" class="form-control" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Отправить</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Страница благодарности -->
+  <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="thankYouModalLabel">Спасибо за заявку!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <p>Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- О нас -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">О нашем автосервисе</h2>
+    <p class="fs-5">
+      Мы — команда профессионалов с более чем 10-летним опытом в ремонте и техническом обслуживании автомобилей различных марок.
+      <strong>Автомастер</strong> — это современный автосервис в Пятигорске, предоставляющий широкий спектр услуг: от базовой диагностики до капитального ремонта двигателя и трансмиссии.
+    </p>
+    <ul class="fs-5">
+      <li>Опытные автомеханики с профильным образованием</li>
+      <li>Современное оборудование и инструменты</li>
+      <li>Прозрачное ценообразование и честный подход</li>
+      <li>Гарантия на все виды работ</li>
+      <li>Удобное расположение и комфортная зона ожидания</li>
+    </ul>
+  </section>
+
+  <!-- Наши услуги -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Наши услуги</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <img src="service1.jpg" alt="Диагностика" class="img-fluid rounded mb-2" style="object-fit: cover; height: 200px; width: 100%;" />
+        <h5>Диагностика</h5>
+        <p>Комплексная проверка электроники и механических узлов.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="service2.jpg" alt="Замена масла" class="img-fluid rounded mb-2" style="object-fit: cover; height: 200px; width: 100%;" />
+        <h5>Замена масла</h5>
+        <p>Быстрая и качественная замена масла и фильтров.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="service3.jpg" alt="Ремонт тормозов" class="img-fluid rounded mb-2" style="object-fit: cover; height: 200px; width: 100%;" />
+        <h5>Ремонт тормозов</h5>
+        <p>Замена колодок, дисков и обслуживание тормозной системы.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="service4.jpg" alt="Сход-развал" class="img-fluid rounded mb-2" style="object-fit: cover; height: 200px; width: 100%;" />
+        <h5>Сход-развал</h5>
+        <p>Точная регулировка углов установки колёс на стенде.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="service5.jpg" alt="Покраска" class="img-fluid rounded mb-2" style="object-fit: cover; height: 200px; width: 100%;" />
+        <h5>Покраска кузова</h5>
+        <p>Профессиональная покраска с подбором цвета и устранением дефектов.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="service6.jpg" alt="Ремонт КПП" class="img-fluid rounded mb-2" style="object-fit: cover; height: 200px; width: 100%;" />
+        <h5>Ремонт АКПП и МКПП</h5>
+        <p>Восстановление и замена автоматических и механических коробок передач.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Отзывы клиентов</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Иван Петров</h5>
+            <p class="card-text">"Отличный сервис! Быстро и качественно заменили масло, персонал вежливый и профессиональный."</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Мария Иванова</h5>
+            <p class="card-text">"Очень довольна ремонтом тормозной системы. Все сделали в срок и с гарантией. Рекомендую!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Алексей Смирнов</h5>
+            <p class="card-text">"Сервис на высшем уровне, при этом цены приемлемые. Сразу видно, что специалисты своего дела."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Специальные предложения -->
   <section class="container my-5">
